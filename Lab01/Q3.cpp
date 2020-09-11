@@ -10,15 +10,16 @@ int main()
   //STEP 1: name variable
   int a = 7;
   int b = 4;
+  int stayVariable;
 
   //STEP 2: swap the variable
+  stayVariable = a;
   a = b;
-  b = a;
+  b = stayVariable;
 
   //STEP 3: print out result
-  cout << "a = 7 and b = 4" << endl;
-  cout << "if a = b = " << a << endl;
-  cout << "if b = a = " << b << endl;
+  cout << "before swap - a = 7 and b = 4" << endl;
+  cout << "after swap - a = " << a << ", b =  "<< b << endl;
   
   return 0;
 }
