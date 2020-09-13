@@ -19,7 +19,11 @@ int main()
     cout << "The clock is " << clock2 << " pm" << endl;
   } else{
     cout << "The clock is " << clock1 << " am" << endl;
+<<<<<<< HEAD
     cout << "The clock is " << clock2 << " am" << endl;
+=======
+    cout << "The clock is " << clock2 << " pm" << endl;
+>>>>>>> 495714f50d9b6d9d2869aaeef7e917a3d79e256c
   }
 
   return 0;
