@@ -22,7 +22,7 @@ int main()
   multiplication = a * b;
 
   //division
-  division = (double)(a / b);
+  division = (double)a / (double) b;
 
   //remainder
   remainder = a % b;
