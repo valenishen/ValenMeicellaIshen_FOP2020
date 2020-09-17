@@ -6,8 +6,13 @@ using namespace std;
 int main()
 {
   //STEP 1: name variable
+  //variable for the result of area, circumference, and radius
   double area, circumference, radius;
+
+  //assign 10 to diameter
   double diameter = 10;
+
+  //assign 3.14 to pi
   double pi = 3.14;
 
   //STEP 2: add operations
@@ -21,7 +26,10 @@ int main()
   area = pi * radius * radius;
 
   //STEP 3: print out result
+  //display circumference result
   cout << "Circumference with diameter 10 = "<< circumference << endl;
+
+  //display area result
   cout << "Circle area with diameter 10 = "<< area << endl;
   
   return 0;
