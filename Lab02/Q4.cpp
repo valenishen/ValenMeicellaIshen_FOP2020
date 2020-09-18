@@ -13,7 +13,7 @@ int main()
   cin >> celcius;
 
   //STEP 4: Operate celcius to farenheit
-  farenheit = ((celcius * (9/5)) + 32);
+  farenheit = ((celcius * 9 / 5) + 32);
 
   //STEP 5: Display result
   cout << "The temperatur in Farenheit = " << farenheit <<endl;
