@@ -13,11 +13,12 @@ int main ()
   cin >> num;
 
   //Make condition with if else statement
+  //even will be 0 if modulus by 2
   if (num % 2 == 0){
     cout << "Your number is even!" << endl;
   } else {
     cout << "Your number is odd!" << endl;
   }
-  
+
 return 0;
 }
