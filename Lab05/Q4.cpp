@@ -14,7 +14,7 @@ int main() {
   //Make condition
   do{
     //Display Menu
-    cout << "\nType '1' if you want to check your balance\nType '2' if you want to deposit\nType '3' if you want to withdraw"<< endl;
+    cout << "\nMenu\nType '1' if you want to check your balance\nType '2' if you want to deposit\nType '3' if you want to withdraw\nType '4' to exit"<< endl;
     cin >> decision;
 
     //Condition depending on the choice
@@ -45,11 +45,14 @@ int main() {
         cout << "\nTransaction is Successfull\n" << "Your remaining balance is $" << balance;
       break;
     }
+
+    case 4 :
+      cout << "Thank you for coming" << endl;
     }
 
-    cout << "\nDo you want to continue? if yes type 'y', if no type 'no' \n";
+    cout << "\nDo you want to continue? if yes type 'y' to go back to the Menu\n";
     cin >> again;
   } while (again == 'y');
-  
+
   return 0;
 }
