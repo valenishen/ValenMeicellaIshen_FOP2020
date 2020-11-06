@@ -3,26 +3,49 @@
 using namespace std;
 
 int main(){
-
-    //Variable Declaration
-    ifstream input;
-    ofstream output;
+    // Variable
     string myname;
+    string fullname;
+    string myage = "My age is 18 years old.";
 
-    //Read File
-    input.open ("myname.txt");
-    while (getline(input, myname, '\n')){
-        input >> myname; 
-        cout << "My name is " << myname << "\n";
-    }
+    // Read File
+    ifstream input; // Variable untuk Read File
+    input.open("myname.txt");
+
+    getline(input, myname, '\n');
+    cout << "My name is " << myname;
+    fullname = myname;
+
     input.close();
-    
-    //Write File
+
+    // Write File
+    ofstream output; // Variable untuk Write File
     output.open("myname.txt");
-    output << myname << endl << "My age is 18 yo";
+
+    output << fullname << endl << myage;
     output.close();
 
-    cout << "Done";
+    cout << "\nDONE";
+
+    // //Variable Declaration
+    // ifstream input;
+    // ofstream output;
+    // string myname;
+
+    // //Read File
+    // input.open ("myname.txt");
+    // while (getline(input, myname, '\n')){
+    //     input >> myname; 
+    // }
+    // cout << "My name is " << myname << "\n";
+    // input.close();
+    
+    // //Write File
+    // output.open("myname.txt");
+    // output << myname << endl << "My age is 18 yo";
+    // output.close();
+
+    // cout << "Done";
     
     return 0;
 }
