@@ -66,7 +66,7 @@ int main(){
     << "   c. Average of Array Value\n" 
     << "   d. Determine whether array of an index is an Even or Odd\n";
     std :: cin >> a;
-    system("clear");
+    system("cls");
     
     //see the condition
     do {
@@ -127,7 +127,7 @@ int main(){
 
       std :: cout << "\n y for repeat\n n for back to menu\n";
       std :: cin >> c;
-      system ("clear");
+      system ("cls");
 
     } while (c == 'y'); //back to switch case
   } while (c == 'n'); //back to menu
