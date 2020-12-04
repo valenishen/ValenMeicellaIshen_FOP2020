@@ -62,7 +62,8 @@ int main(){
   }
 
   cout << endl;
-
+  
+  //display the result
   cout << "The person who has lowest salaries is " << lowestName << " with " << lowest << endl << endl;
   cout << "The person who has highest salaries is " << highestName << " with " << highest << endl << endl;
 
@@ -70,9 +71,11 @@ int main(){
     sum += salaries[i]; //for average
   }
 
+  //calculate the average and display it
   average = sum / array_size;
   cout << "-----The average of all salaries is " << average << endl << endl;
 
+  //determine the salaries above or under the average
   cout << "The person who has salaries above the average: " << endl;
   for(int i = 0; i < array_size; i++){
     if (salaries[i] > average){
