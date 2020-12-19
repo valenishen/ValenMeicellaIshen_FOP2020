@@ -67,7 +67,7 @@ int main()
           } while (x>2 || x<0 || y>2 || y<0);
         
             printOneTime = 1;
-
+            
        } while (!Assign(gameBoard, x, y, turn));
        
     // The Assign function will attempt to assign a move from a player to the gameboard. IF there is already a piece at that location, Assign function will not put the piece at that location and it returns false. Otherwise, it will put the piece at that location and return true. 
